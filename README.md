@@ -33,13 +33,13 @@ cd proyecto_estudiantes
 Instala las dependencias requeridas:
 
 Flex:
-sudo apt install flex
-sudo apt install bison
+-sudo apt install flex
+-sudo apt install bison
 
 Compila el código fuente:
-flex scanner.l
-bison -d parser.y
-gcc -o sistema_estudiantes lex.yy.c parser.tab.c student_system.c -lfl
+-flex scanner.l
+-bison -d parser.y
+-gcc -o sistema_estudiantes lex.yy.c parser.tab.c student_system.c -lfl
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -48,19 +48,19 @@ Instalación con Docker:
 Asegúrate de tener Docker instalado.
 Construye la imagen Docker:
 
-docker build -t sistema_estudiantes .
-docker run -it sistema_estudiantes
+-docker build -t sistema_estudiantes .
+-docker run -it sistema_estudiantes
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Comandos Disponibles
 Estos son los comandos que puedes utilizar en el sistema:
 
-registrar_estudiante("nombre", id): Registra un nuevo estudiante con un nombre y un ID.
-asignar_nota("nombre", id, nota): Asigna una nota a un estudiante.
-mostrar_notas("nombre"): Muestra la nota asignada a un estudiante.
-calcular_promedio("nombre"): Calcula el promedio de las notas del estudiante.
-mostrar_estudiantes(): Muestra la lista de todos los estudiantes registrados.
+-registrar_estudiante("nombre", id): Registra un nuevo estudiante con un nombre y un ID.
+-asignar_nota("nombre", id, nota): Asigna una nota a un estudiante.
+-mostrar_notas("nombre"): Muestra la nota asignada a un estudiante.
+-calcular_promedio("nombre"): Calcula el promedio de las notas del estudiante.
+-mostrar_estudiantes(): Muestra la lista de todos los estudiantes registrados.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
